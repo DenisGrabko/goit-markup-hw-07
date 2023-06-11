@@ -58,6 +58,104 @@
             </li>
           </ul>
         </address>
+
+        <div class="header-position-button-burger">
+          <button type="button" class="header-button-burger js-open-menu">
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-burger-header"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header-button-burger-modal-window js-menu-container">
+          <button class="header-modal-list-close-btn js-close-menu">
+            <svg class="header-modal-list-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector-cross"></use>
+            </svg>
+          </button>
+
+          <ul class="header-modal-list-of-pages list">
+            <li class="header-modal-item-of-list-of-pages">
+              <a href="./index.html" class="header-modal-link-of-pages link"
+                >Studio</a
+              >
+            </li>
+            <li class="header-modal-item-of-list-of-pages">
+              <a href="./portfolio.html" class="header-modal-link-of-pages link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-modal-item-of-list-of-pages">
+              <a href="" class="header-modal-link-of-pages link">Contacts</a>
+            </li>
+          </ul>
+
+          <address class="header-modal-address">
+            <ul class="header-modal-address-list list">
+              <li>
+                <a
+                  class="header-modal-address-link-tel link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-modal-address-link-mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="header-modal-list-of-social-media list">
+            <li class="header-modal-item-of-social-media">
+              <a href="" class="header-modal-svg-link-of-social-media">
+                <svg
+                  class="header-modal-svg-of-socmedia"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-modal-item-of-social-media">
+              <a href="" class="header-modal-svg-link-of-social-media">
+                <svg
+                  class="header-modal-svg-of-socmedia"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-modal-item-of-social-media">
+              <a href="" class="team-svg-link">
+                <svg
+                  class="header-modal-svg-of-socmedia"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-modal-item-of-social-media">
+              <a href="" class="team-svg-link">
+                <svg
+                  class="header-modal-svg-of-socmedia"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -133,7 +231,8 @@
             <li class="specialization-item">
               <img
                 class="specialization-first-img"
-                src="./images/1-1.jpg"
+                srcset="./images/what-are-we-doing-computer-360-2x.jpg 2x"
+                src="./images/what-are-we-doing-computer-360-1x.jpg"
                 alt="monitor"
                 width="360"
                 height="300"
@@ -142,7 +241,8 @@
             <li class="specialization-item">
               <img
                 class="specialization-second-img"
-                src="./images/2-1.jpg"
+                srcset="./images/what-are-we-doing-one-phone-360-2x.jpg 2x"
+                src="./images/what-are-we-doing-one-phone-360-1x.jpg"
                 alt="messenger in the phone"
                 width="360"
                 height="300"
@@ -150,7 +250,9 @@
             </li>
             <li class="specialization-item">
               <img
-                src="./images/3-1.jpg"
+                class="specialization-third-img"
+                src="./images/what-are-we-doing-phones-360-1x.jpg"
+                srcset="./images/what-are-we-doing-phones-360-2x.jpg 2x"
                 alt="website on the phone"
                 width="360"
                 height="300"
@@ -167,6 +269,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/first-man-guerrero-264-2x.jpg 2x"
                 src="./images/1-st-man-1.jpg"
                 alt="the company's product designer"
                 width="264"
@@ -210,6 +313,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                scrset="./images/second-man-tom-264-2x.jpg 2x"
                 src="./images/2-th-man-1.jpg"
                 alt="the company's frontend developer"
                 width="264"
@@ -253,6 +357,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                crset="./images/third-woman-camila-264-2x.jpg 2x"
                 src="./images/3-th-woman-1.jpg"
                 alt="the company's marketer"
                 width="264"
@@ -296,6 +401,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                csrset="./images/fourth-man-daniel-264-2x.jpg 2x"
                 src="./images/4-th-man-1.jpg"
                 alt="the company's ui designer"
                 width="264"
@@ -392,47 +498,51 @@
     </main>
     <footer class="footer">
       <div class="footer-global-container container">
-        <div class="footer-box-logo-text">
-          <a class="footer-logo-web logo link" href="./index.html">
-            Web<span class="footer-logo-studio-invert">Studio</span>
-          </a>
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-social-media-container">
-          <p class="footer-social-media-container-title">Social media</p>
-          <ul class="footer-social-grid list">
-            <li class="footer-social-item">
-              <a href="" class="footer-svg-link">
-                <svg class="footer-svg-items" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="footer-svg-link">
-                <svg class="footer-svg-items" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="footer-svg-link">
-                <svg class="footer-svg-items" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="footer-svg-link">
-                <svg class="footer-svg-items" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-conteiner-logo-plus-media">
+          <div class="footer-box-logo-text">
+            <a class="footer-logo-web logo link" href="./index.html">
+              Web<span class="footer-logo-studio-invert">Studio</span>
+            </a>
+            <div class="footer-text-container">
+              <p class="footer-text">
+                Increase the flow of customers and sales for your business with
+                digital marketing & growth solutions.
+              </p>
+            </div>
+          </div>
+          <div class="footer-social-media-container">
+            <p class="footer-social-media-container-title">Social media</p>
+            <ul class="footer-social-grid list">
+              <li class="footer-social-item">
+                <a href="" class="footer-svg-link">
+                  <svg class="footer-svg-items" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-svg-link">
+                  <svg class="footer-svg-items" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-svg-link">
+                  <svg class="footer-svg-items" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-svg-link">
+                  <svg class="footer-svg-items" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-container-email-input">
           <p class="footer-email-input-description-of-input">Subscribe</p>
@@ -560,7 +670,7 @@
         </form>
       </div>
     </div>
-
-    <script src="./js/modal.js"></script>
+    <scrip src="./mobile-menu.js"></scrip>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
