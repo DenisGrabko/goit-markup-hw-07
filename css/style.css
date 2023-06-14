@@ -1304,6 +1304,11 @@ ol {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-height: 616px) {
+    .backdrop-modal-window {
+        min-height: 383px;
+    }
+}
 
 @media screen and (min-width: 428px) {
     .hero-section-background-image {            
