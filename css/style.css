@@ -1306,7 +1306,7 @@ ol {
 
 @media screen and (max-height: 616px) {
     .backdrop-modal-window {
-        min-height: 383px;
+        min-height: 414px;
     }
 }
 
