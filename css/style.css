@@ -348,8 +348,7 @@ ol {
 
 
 .hero-title {
-    max-width: 320px;
-    height: 120px;    
+    max-width: 320px;      
     font-family: "Roboto", sans-serif;
     font-style: normal;
     margin-left: auto;
@@ -369,20 +368,32 @@ ol {
     background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px) {
-    .hero-section-background-image {
-        max-width: 1128px;
-    }
+@media screen and (max-width: 428px) {
+    .hero-section-background-image{
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), 
+            url('../images/people-office-1-1-mobile-428-1x.jpg')
+            }    
 }
 
-@media screen and (min-width: 1128px) {
+@media screen  and (min-device-pixel-ratio: 2) and (max-width: 428px), 
+    screen and (min-resolution: 192dpi) and (max-width: 428px),
+    screen and (min-resolution: 2dppx) and (max-width: 428px) {
+        .hero-section-background-image {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url('../images/people-office-1-1-mobile-428-2x.jpg')
+        }
+    }
+
+@media screen and (min-width: 768px) {
     .hero-section-background-image {
         max-width: 1440px;
     }
-    .hero {
-        padding: 188px 0;
-    }
 }
+
 
 .hero-button {
     display: block;
@@ -1294,24 +1305,24 @@ ol {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 428px) {
     .hero-section-background-image {            
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)) , 
-            url('../images/people-office-1-1-mobile-428-1x.jpg');
+            url('../images/people-office-tablet-768-1x.jpg');
 
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
-screen and (min-resolution: 192dpi) and (max-width: 768px),
-screen and (min-resolution: 2dppx) and (max-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (mix-width: 428px),
+screen and (min-resolution: 192dpi) and (mix-width: 428px),
+screen and (min-resolution: 2dppx) and (mix-width: 428px) {
     .hero-section-background-image {        
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),                
             rgba(46, 47, 66, 0.7)), 
-            url('../images/people-office-1-1-mobile-428-2x.jpg');        
+            url('../images/people-office-1-1-tablet-768-2x.jpg');        
     }
 
 }
@@ -1553,21 +1564,21 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 
     }
 
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) {
     .hero-section-background-image {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/people-office-tablet-768-1x.jpg');
+            url('../images/people-office-desktop-1440-1x.jpg');
     }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1158px),
-screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1158px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero-section-background-image {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url('../images/people-office-1-1-tablet-768-2x.jpg');
+            url('../images/people-office-destop-1440-2x.jpg');
     }
 
 }
@@ -1592,6 +1603,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1158px
         flex-direction: row;
         align-items: center;
         gap: 40px;        
+        }
+
+    .contact-item-mail-phone {        
+        font-size: 16px;
+        line-height: 24px;
         }
 
         /*hero*/ 
@@ -1622,7 +1638,8 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1158px
         }
 
         .features-svg-image-container {
-            width: 100%;            
+            width: 100%;
+            margin-bottom: 8px;            
         }
 
         .features-subtitle {
